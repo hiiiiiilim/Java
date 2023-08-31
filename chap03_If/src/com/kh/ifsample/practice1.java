@@ -29,5 +29,7 @@ public class practice1 {
 		}else {
 			System.out.println("종료 메뉴입니다.");
 		}
+		
+		
 	}
 }

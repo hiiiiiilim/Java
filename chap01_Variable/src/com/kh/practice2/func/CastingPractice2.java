@@ -15,7 +15,7 @@ public class CastingPractice2 {
 		System.out.print("¼öÇÐ : ");
 		double mth = sc.nextDouble();
 		
-		System.out.println("ÃÑÁ¡ : " + (ko+en+mth));
-		System.out.println("ÃÑÁ¡ : " + (ko+en+mth)/3);	
+		System.out.println("ÃÑÁ¡ : " + (int)(ko+en+mth));
+		System.out.println("Æò±Õ : " + (int)(ko+en+mth)/3);	
 	}
 }

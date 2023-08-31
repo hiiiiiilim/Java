@@ -12,5 +12,9 @@ public class VariablePractice4 {
 		System.out.println("첫번째 문자 : "+x.charAt(0));
 		System.out.println("두번째 문자 : "+x.charAt(1));
 		System.out.println("세번째 문자 : "+x.charAt(2));
+		//한자리가 아니라 자리를 지정해서 출력할 수 있음
+		//시작만 정해도되고 끝을 지정해도됨
+		//자리위치 정해서 출력하기
+		System.out.println(x.substring(0,1));
 	}
 }
