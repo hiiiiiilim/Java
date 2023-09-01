@@ -24,5 +24,20 @@ public class practice6 {
 				System.out.println(i);
 			}
 		}
+	
+		System.out.println();
+		
+		
+		// Math 자바에 내장 클래스
+		// min < 가장 작은 값 -  주어진 두개의 숫자중에서 더 작은 값을 반환
+		// max < 가장 큰 값 - 주어진 두개의 숫자중에서 더 큰 값을 반환
+		int a = 5;
+		int b = 8;
+		int minValue = Math.min(a,b);// 5가저장됨
+		System.out.println(minValue);
+		int maxValue = Math.max(a,b);//8이저장됨
+		System.out.println(maxValue);
+	
+	
 	}
 }
