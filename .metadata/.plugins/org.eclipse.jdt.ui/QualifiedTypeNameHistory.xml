@@ -3,5 +3,12 @@
     <fullyQualifiedTypeName name="java.lang.Double"/>
     <fullyQualifiedTypeName name="com.kh.switchsample.SwitchScanner"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="com.kh.example.practice2.model.vo.Product"/>
+    <fullyQualifiedTypeName name="com.kh.example.practice4.model.vo.Student"/>
+    <fullyQualifiedTypeName name="com.kh.example.practice3.run.CirleRun"/>
+    <fullyQualifiedTypeName name="com.kh.example.practice3.model.vo.Circle"/>
+    <fullyQualifiedTypeName name="com.kh.classAM.AM"/>
+    <fullyQualifiedTypeName name="com.kh.practice2.model.vo2.Product"/>
+    <fullyQualifiedTypeName name="com.kh.gettersetter.PlayerCharacter"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
 </qualifiedTypeNameHistroy>
