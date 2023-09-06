@@ -10,6 +10,7 @@ public class PlayerCharacter {
 	 	데이터의 복사본을 던저주기 때문에 원래 객체의 데이터는 손상시키지 않음
 	 	원본데이터는 안전
 	 	원본값 복사해서 저장
+	 	setter에서 검증된 것을 전달??
 	 * */
 	public String getName() {
 		return name;
@@ -47,6 +48,16 @@ public class PlayerCharacter {
 		}
 	}
 	
+	//valid -> 검증할때쓰는 이름
+//	public void isValidHealth() {
+//		//만약에 체력이 0이라면 죽이고 1이상이면 살리자
+//		if(health >= 1) {//체력이 1이상일 경우
+//			this.health = health;
+//		}else {//체력이 0이하라면 체력을 표시x
+//			System.out.println("체력이 없습니다.");
+//		}
+//	}
+//	
 	//캐릭터 정보출력
 	public void displayInfo() {
 		System.out.println("캐릭터 정보 : "+name);
