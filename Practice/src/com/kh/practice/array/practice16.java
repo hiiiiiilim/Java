@@ -30,7 +30,10 @@ public class practice16 {
 		
 		//y or n 판별
 		while(!tf) {
+			System.out.print("더 값을 입력하시겠습니까? :(y/n))");
+			morechar=sc.next().charAt(0);
 			if(morechar=='y') {
+				
 				System.out.print("더 입력하고 싶은 개수: ");
 				moreint = sc.nextInt();
 				//복사해올 배열 선언
@@ -49,6 +52,7 @@ public class practice16 {
 				for(int i=0; i<arr.length; i++) {
 					System.out.print(arr[i]+" ");
 				}
+				tf=true;
 			}
 		}
 
