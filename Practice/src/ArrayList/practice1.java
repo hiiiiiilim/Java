@@ -36,7 +36,14 @@ public class practice1 {
 		for(String b:a) {
 			System.out.println(b);
 		}
-		
+		//ªË¡¶
+		a.remove(1);
+		a.remove(1);
+		a.remove(1);
+		a.remove(1);
+		a.remove(2);
+		a.remove(2);
+		System.out.println(a);
 	}
 	
 	
