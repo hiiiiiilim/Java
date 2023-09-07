@@ -5,7 +5,7 @@ public class TwoArray {
 	public static void main(String[] args) {
 		// 이중 문자열 배열 선언과 초기화
 		String[][] fruits = {
-				{"Apple", "Banana", },
+				{"Apple", "Banana", "Cherry"},
 				{"Grapes", "Orange", "Strawberry"},
 				{"Kiwi"}
 		};
