@@ -7,5 +7,10 @@ public class PersonModel {
 		this.name=name;
 	}
 	
-	
+	public String isVaildNumber() {
+		if(name.equals(null)) {
+			this.name=null;
+		
+		}	return name;
+	}
 }

@@ -15,12 +15,12 @@ public class PersonController {
 	public void run() {
 		String name = view.getInput();
 		model.setPerson(name);
-		if(name.equals(null)) {
-			view.noName(name);
+		name = model.isVaildNumber();
+		if(name=="") {
+			view.noName();
 		}else {
 			view.display(name);
 		}
-		
 		
 	}
 }
