@@ -147,6 +147,9 @@ public class DimensionPractice {
 			}
 			System.out.println();
 		}
+		sc.close();
+		
+		
 	}//end of practice7
 	
 	public void practice8() {
@@ -244,10 +247,10 @@ public class DimensionPractice {
 			
 	}//end of practice9
 	
-	public void practice10() {
-		Scanner sc = new Scanner(System.in);
-		
+	public void practice10() {	
 		String[][] arr = new String[6][6];
+		
+		Scanner sc = new Scanner(System.in);
 		System.out.print("행 인덱스 입력: ");
 		int num1=sc.nextInt();
 		System.out.print("열 인덱스 입력: ");
@@ -256,21 +259,17 @@ public class DimensionPractice {
 		arr[num1][num2]="x";
 		
 		for(int i=0; i<arr.length-1; i++) {
-			System.out.print(" "+i);
+			System.out.print(i+" ");
 		}
 		System.out.println();
 		for(int i=0; i<arr.length-1; i++) {
 			for(int j=0; j<arr[i].length-1; j++) {
-			
+				System.out.print(arr[i][j]);
 			}
 			System.out.println(i);
 			
-		}
-		
-		
-
-		
-		
+		}   
+     		
 	}//end of practice10
 	
 }
