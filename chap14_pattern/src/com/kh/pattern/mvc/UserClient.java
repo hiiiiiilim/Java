@@ -17,7 +17,7 @@ public class UserClient {
 		
 		//컨트롤러 객체 생성 및 모델과 뷰 설정
 		UserController controller = new UserController(user, view);
-		controller.updateView();
+		//controller.updateView();
 		
 	}
 }
