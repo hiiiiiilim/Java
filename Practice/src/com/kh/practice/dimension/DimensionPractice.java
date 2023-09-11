@@ -131,10 +131,22 @@ public class DimensionPractice {
 		
 		System.out.print("행의 크기 :");
 		int num=sc.nextInt();
-		int index=97;
-
-	//모르겟다.
+		char index='a';
 		
+		char[][] arr = new char[num][];
+		//배열의 열의 크기를 받아오는 for문
+		for(int i=0; i<arr.length; i++) {
+			int num2 = sc.nextInt();
+			arr[i] = new char[num2];
+		}
+		//배열의 값을 초기화하고 출력하는 for문
+		for(int i=0; i<arr.length; i++) {
+			for(int j=0; j<arr[i].length; j++) {
+				arr[i][j]=index++;
+				System.out.print(arr[i][j]);
+			}
+			System.out.println();
+		}
 	}//end of practice7
 	
 	public void practice8() {
@@ -147,10 +159,118 @@ public class DimensionPractice {
 			"강건강", "남나나", "도대담", "류라라", "문미미","박보배",
 			"송성실", "윤예의", "진재주", "차천축", "피풍표", "홍하하"
 		};
+		String[][] group1 = new String[3][2];
+		String[][] group2 = new String[3][2];
+		
+		int count=0;
+		
+		System.out.println("===1분단===");
+		for(int i=0; i<group1.length; i++) {
+			for(int j=0; j<group1[i].length; j++) {
+				group1[i][j]=arr[count];
+				count++;
+				System.out.print(group1[i][j] + " ");
+			}
+			System.out.println();
+		}
+		System.out.println("===2분단===");
+		for(int i=0; i<group2.length; i++) {
+			for(int j=0; j<group2[i].length; j++) {
+				group2[i][j]=arr[count];
+				count++;
+				System.out.print(group2[i][j] + " ");
+			}
+			System.out.println();
+		}
+	}//end of practice8
+	
+	public void practice9() {
+			String arr[] = {
+				"강건강", "남나나", "도대담", "류라라", "문미미","박보배",
+				"송성실", "윤예의", "진재주", "차천축", "피풍표", "홍하하"
+			};
+			String[][] group1 = new String[3][2];
+			String[][] group2 = new String[3][2];
+			
+			int count=0;
+			
+			System.out.println("===1분단===");
+			for(int i=0; i<group1.length; i++) {
+				for(int j=0; j<group1[i].length; j++) {
+					group1[i][j]=arr[count];
+					count++;
+					System.out.print(group1[i][j] + " ");
+				}
+				System.out.println();
+			}
+			System.out.println("===2분단===");
+			for(int i=0; i<group2.length; i++) {
+				for(int j=0; j<group2[i].length; j++) {
+					group2[i][j]=arr[count];
+					count++;
+					System.out.print(group2[i][j] + " ");
+				}
+				System.out.println();
+			}
+			
+			System.out.println("===================================");
+			Scanner sc = new Scanner(System.in);
+			System.out.print("검색할 학생 이름을 입력하세요 : ");
+			String name = sc.next();
+			
+			for(int i=0; i<group1.length; i++) {
+				for(int j=0; j<group1[i].length; j++) {
+					if(group1[i][j].equals(name)) {
+						if(j%2==0) {
+							System.out.println("검색하신 "+name+" 학생은 1분단 "+(j+1)+"번째 줄 왼쪽에 있습니다.");
+						}else {
+							System.out.println("검색하신 "+name+" 학생은 1분단 "+(j+1)+"번째 줄 오른쪽에 있습니다.");
+						}
+					}
+				}
+			}
+			
+			for(int i=0; i<group2.length; i++) {
+				for(int j=0; j<group2[i].length; j++) {
+					if(group2[i][j].equals(name)) {
+						if(j%2==0) {
+							System.out.println("검색하신 "+name+" 학생은 2분단 "+(j+1)+"번째 줄 왼쪽에 있습니다.");
+						}else {
+							System.out.println("검색하신 "+name+" 학생은 2분단 "+(j+1)+"번째 줄 오른쪽에 있습니다.");
+						}
+					}
+				}
+			}
+			
+	}//end of practice9
+	
+	public void practice10() {
+		Scanner sc = new Scanner(System.in);
+		
+		String[][] arr = new String[6][6];
+		System.out.print("행 인덱스 입력: ");
+		int num1=sc.nextInt();
+		System.out.print("열 인덱스 입력: ");
+		int num2=sc.nextInt();
+		
+		arr[num1][num2]="x";
+		
+		for(int i=0; i<arr.length-1; i++) {
+			System.out.print(" "+i);
+		}
+		System.out.println();
+		for(int i=0; i<arr.length-1; i++) {
+			for(int j=0; j<arr[i].length-1; j++) {
+			
+			}
+			System.out.println(i);
+			
+		}
 		
 		
+
 		
 		
-		
-	}
+	}//end of practice10
+	
 }
