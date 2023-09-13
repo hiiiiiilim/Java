@@ -44,11 +44,16 @@ public class PracticeMain2 {
 		String str = "¿À´Ã Àú³áÀº ¹¹¸ÔÁö";
 		str =str.replace("Àú³á","Á¡½É");
 		System.out.println(str);
+		StringBuffer sb = new StringBuffer(str);
+		sb.replace(3, 5, "Á¡½É");
+		System.out.println(sb.toString());
+		
+		
 	}
 	public void practice5() {
 		//¹®ÀÚ¿­ »èÁ¦ delete(,,)
 		String str = "¿À´Ã Àú³áÀº ¹¹¸ÔÁö";
-		StringBuffer sb = new StringBuffer();
+		StringBuffer sb = new StringBuffer();//StringBuffer sb = new StringBuffer(str);µµ °¡´É
 		sb.append(str);
 		sb.delete(3,7);
 		System.out.println(sb.toString());
