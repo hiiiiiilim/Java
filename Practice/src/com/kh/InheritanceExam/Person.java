@@ -1,21 +1,21 @@
 package com.kh.InheritanceExam;
 
 public class Person {
-
-	private String name;
+	protected String name;
 	private int age;
 	private double height;
 	private double weight;
 	
 	public Person() {
-		
+	
 	}
-	public Person(String name, int age, double height, double weight) {
-		this.name=name;
-		this.age=age;
-		this.height=height;
-		this.weight=weight;
+	public Person(int age, double height, double weight) {
+		this.age = age;
+		this.height = height;
+		this.weight = weight;
 	}
+	
+	
 	public String getName() {
 		return name;
 	}
@@ -40,8 +40,8 @@ public class Person {
 	public void setWeight(double weight) {
 		this.weight = weight;
 	}
-
-	public String toString() {
-		return "name= "+name+", age="+age+", height="+height+", weight="+weight;
+	
+	public String information() {
+		return "name=" + name + ", age=" + age + ", height=" + height+" ,weight="+weight;
 	}
-}
+}	
