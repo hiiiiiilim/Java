@@ -3,8 +3,8 @@ package com.kh.practice.student.controller;
 import com.kh.practice.student.model.vo.Student;
 
 public class StudentController {
-	Student[] sArr = new Student[5];
-	int CUT_LINE = 60;
+	private Student[] sArr = new Student[5];
+	public int CUT_LINE = 60;
 	
 	public StudentController() {
 		sArr[0]=new Student ("±è±æµ¿", "ÀÚ¹Ù", 100);
@@ -21,8 +21,18 @@ public class StudentController {
 		int sum=0;
 		
 		for(int i=0; i<sArr.length; i++) {
-			sum
+			sum += sArr[i].getScore();
 		}
+		return sum;
+	}
+	
+	public double[] avgScore() {
+		double[] avg = new double[2];
+		
+		avg[0]=sumScore();
+		avg[1]=sumScore()/sArr.length;
+		
+		return avg;
 	}
 
 }
