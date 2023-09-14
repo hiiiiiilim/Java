@@ -30,7 +30,7 @@ public class Practice4 {
 	public void practice3() {//월일
 		Date currentDate = new Date();
 		SimpleDateFormat sdf = new SimpleDateFormat("MM-dd");
-		
+		o
 		String a = sdf.format(currentDate);
 		System.out.println("월일: "+a);
 	}
