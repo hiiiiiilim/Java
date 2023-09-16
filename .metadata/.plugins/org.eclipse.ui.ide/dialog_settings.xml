@@ -12,6 +12,7 @@
 		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\Users\khloelim\OneDrive\바탕 화면\ma"/>
 			<item value="C:\Users\user1\Java_Workspace\chap18_Abstract"/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
