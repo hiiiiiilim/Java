@@ -50,6 +50,21 @@ public class HashMapExam {
 		studentGrades.put(StudentUpdate, newGrade);
 		//System.out.println(studentGrades+"의 성적을 "+ newGrade+"로 수정했습니다.");전체출력
 		System.out.println(StudentUpdate+"의 성적을 "+ newGrade+"로 수정했습니다.");
+		
+		//학생제거
+		String removeStudent = "David";
+		studentGrades.remove(removeStudent);
+		
+		System.out.println(removeStudent+"의 성적을 삭제 했습니다.");
+		
+		//최종 학생 성적 출력
+		System.out.println("최종 학생 성적:");
+		for(Map.Entry<String, Integer> entry : studentGrades.entrySet()) {
+			String name = entry.getKey();
+			int grade = entry.getValue();
+			System.out.println(name + " : " + grade);
+		}
+		
 
 	}
 
