@@ -46,6 +46,13 @@ public class FileDAO {
 		return sb;
 	}
 	public void fileEdit(String file, String s) {
-		
+		try {
+			FileWriter w = new FileWriter(file, true);
+			w.append(s);
+			w.close();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 }

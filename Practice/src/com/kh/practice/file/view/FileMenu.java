@@ -25,7 +25,7 @@ public class FileMenu {
 		}else if(select == 2) {
 			fileOpen();
 		}else if(select == 3) {
-			
+			fileEdit();
 		}else if(select == 9) {
 			System.exit(0);
 		}else {
@@ -42,13 +42,13 @@ public class FileMenu {
 			System.out.println("파일에 저장할 내용을 입력하세요.");
 			System.out.println("ex끝it 이라고 입력하면 종료됩니다.");
 			System.out.print("내용 : ");
-			String text = sc.next();
+			String text = sc.nextLine();
 			
 			list.add(text);
 			
 			if(text.equals("ex끝it")) {
 				for(int i=0; i<list.size()-1; i++) {
-					file.append(list.get(i)).append("\n");
+					file.append(list.get(i));
 				}
 				while(!isFalse) {
 					System.out.print("저장할 파일 명을 입력하세요.(myFile.txt) : ");
@@ -77,6 +77,7 @@ public class FileMenu {
 		if(fc.checkName(fileName)) {
 			String result = fc.fileOpen(fileName).toString();
 			System.out.println(result);
+			mainMenu();
 		}else {
 			System.out.println("없는 파일입니다.");
 			mainMenu();
@@ -88,6 +89,27 @@ public class FileMenu {
 		System.out.println("수정할 파일 명: ");
 		String fileName=sc.next();
 		if(fc.checkName(fileName)) {
+			boolean isFalse=false;
+			StringBuilder file = new StringBuilder();
+			ArrayList<String> list = new ArrayList<>();
+			while(!isFalse) {
+				System.out.println("파일에 저장할 내용을 입력하세요.");
+				System.out.println("ex끝it 이라고 입력하면 종료됩니다.");
+				System.out.print("내용 : ");
+				String text = sc.nextLine();
+				
+				list.add(text);
+				
+				if(text.equals("ex끝it")) {
+					for(int i=0; i<list.size()-1; i++) {
+						file.append(list.get(i)).append("\n");
+					}
+					fc.fileEdit(fileName, file);
+					isFalse=true;
+					mainMenu();
 				}
+			}
+		}
 	}//end of fileEdit
 }
+

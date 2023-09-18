@@ -21,6 +21,6 @@ public class FileController {
 		return fd.fileOpen(file);
 	}
 	public void fileEdit(String file, StringBuilder s) {
-		
+		fd.fileEdit(file, s.toString());
 	}
 }
