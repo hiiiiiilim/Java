@@ -27,11 +27,11 @@ public class ComparatorMain implements Comparator<String> {
 		str.add("add");
 		str.add("abcdefghijklmnop");
 		str.add("day");
-		str.add("s");
+		str.add("z");
 		
 		//Comparator를 사용해서 문자 정렬
 		Collections.sort(str, new ComparatorMain());
-		
+		//한글 소문자 대문자 순서대로
 		//정렬된 결과 출력
 		for(String s : str) {
 			System.out.println(s);
