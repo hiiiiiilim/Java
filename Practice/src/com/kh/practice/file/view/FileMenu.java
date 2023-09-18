@@ -23,7 +23,7 @@ public class FileMenu {
 		if(select==1) {
 			fileSave();
 		}else if(select == 2) {
-			
+			fileOpen();
 		}else if(select == 3) {
 			
 		}else if(select == 9) {
@@ -32,7 +32,8 @@ public class FileMenu {
 			System.out.println("잘 못 입력하셨습니다. 다시입력해주세요");
 			mainMenu();
 		}
-	}
+	}//end of mainMenu
+	
 	public void fileSave() {
 		boolean isFalse=false;
 		StringBuilder file = new StringBuilder();
@@ -68,5 +69,25 @@ public class FileMenu {
 				mainMenu();					
 			}
 		}
-	}
+	}//end of fileSave
+	
+	public void fileOpen() {
+		System.out.print("열 파일 명:");
+		String fileName = sc.next();
+		if(fc.checkName(fileName)) {
+			String result = fc.fileOpen(fileName).toString();
+			System.out.println(result);
+		}else {
+			System.out.println("없는 파일입니다.");
+			mainMenu();
+		}
+	
+	}//end of fileOpen
+	
+	public void fileEdit() {
+		System.out.println("수정할 파일 명: ");
+		String fileName=sc.next();
+		if(fc.checkName(fileName)) {
+				}
+	}//end of fileEdit
 }

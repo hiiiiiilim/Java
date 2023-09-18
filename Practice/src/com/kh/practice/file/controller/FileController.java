@@ -18,9 +18,9 @@ public class FileController {
 		fd.fileSave(file, s);
 	}
 	public StringBuilder fileOpen(String file) {
-		return null;
+		return fd.fileOpen(file);
 	}
-	public void fikeEdit(String file, StringBuilder s) {
+	public void fileEdit(String file, StringBuilder s) {
 		
 	}
 }
