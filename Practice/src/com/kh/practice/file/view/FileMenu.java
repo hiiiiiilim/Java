@@ -5,9 +5,11 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import com.kh.practice.file.controller.FileController;
+
 public class FileMenu {
 	private Scanner sc = new Scanner(System.in);
-	//FileController fc = new FileController();
+	FileController fc = new FileController();
 	
 	public void mainMenu() {
 		System.out.println("*****My Note*****");
@@ -44,19 +46,24 @@ public class FileMenu {
 			list.add(text);
 			
 			if(text.equals("ex끝it")) {
-				for(int i=0; i<list.size(); i++) {
+				for(int i=0; i<list.size()-1; i++) {
 					file.append(list.get(i)).append("\n");
 				}
-				System.out.print("저장할 파일 명을 입력하세요.(myFile.txt) : ");
-				String title = sc.next();
-				
-				try {
-					FileWriter w = new FileWriter(title);
-					w.write(file.toString());
-					w.close();
-				} catch (IOException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
+				while(!isFalse) {
+					System.out.print("저장할 파일 명을 입력하세요.(myFile.txt) : ");
+					String title = sc.next();
+					if(fc.checkName(title)) {
+						System.out.println("이미 존재하는 파일입니다. 덮어쓰시겠습니까?(y/n)");
+						String yesOrNo = sc.next();
+						if(yesOrNo.equals("y")) {
+							fc.fileSave(title, file.toString());
+							isFalse=true;
+						}else {
+							continue;
+						}
+					}
+					fc.fileSave(title, file.toString());
+					isFalse=true;
 				}
 				mainMenu();					
 			}
