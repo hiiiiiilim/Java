@@ -1,19 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="com.kh.todoList.TodoListModel"/>
-    <fullyQualifiedTypeName name="com.kh.todoList.TodoListView"/>
-    <fullyQualifiedTypeName name="com.kh.Class_Array.Student"/>
-    <fullyQualifiedTypeName name="com.kh.ListAndArray.ListAndArray"/>
-    <fullyQualifiedTypeName name="com.kh.abstractSample.Animal.Cat"/>
-    <fullyQualifiedTypeName name="com.kh.abstractSample.Animal.Animal"/>
-    <fullyQualifiedTypeName name="com.kh.interfaceSample.MyInterface"/>
-    <fullyQualifiedTypeName name="com.kh.foodStore.Menu"/>
-    <fullyQualifiedTypeName name="com.kh.foodStore.FoodStore"/>
-    <fullyQualifiedTypeName name="java.util.LinkedList"/>
-    <fullyQualifiedTypeName name="com.kh.arrayexam.ArrayExam"/>
-    <fullyQualifiedTypeName name="com.kh.InheritanceExam.Person"/>
-    <fullyQualifiedTypeName name="com.kh.InheritanceExam.Employee"/>
-    <fullyQualifiedTypeName name="com.kh.InheritanceExam.Student"/>
     <fullyQualifiedTypeName name="java.lang.Double"/>
     <fullyQualifiedTypeName name="java.lang.Boolean"/>
     <fullyQualifiedTypeName name="java.time.LocalDate"/>
@@ -24,7 +10,6 @@
     <fullyQualifiedTypeName name="java.util.Calendar"/>
     <fullyQualifiedTypeName name="com.kh.api.exam1.ReplaceMain"/>
     <fullyQualifiedTypeName name="com.kh.practice.student.model.vo.Student"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
     <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="java.lang.Exception"/>
@@ -54,10 +39,25 @@
     <fullyQualifiedTypeName name="com.kh.ThreadMain.ThreadMain"/>
     <fullyQualifiedTypeName name="java.io.FileReader"/>
     <fullyQualifiedTypeName name="java.io.BufferedReader"/>
-    <fullyQualifiedTypeName name="java.lang.Thread"/>
     <fullyQualifiedTypeName name="com.kh.ThreadMain.StudentThread"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.util.Random"/>
     <fullyQualifiedTypeName name="com.kh.ThreadMain.SimpleGame.Gm"/>
     <fullyQualifiedTypeName name="com.kh.ThreadMain.GameLoop"/>
+    <fullyQualifiedTypeName name="com.kh.TreeMain.TreeNode"/>
+    <fullyQualifiedTypeName name="com.kh.TreeMain.BinaryTree"/>
+    <fullyQualifiedTypeName name="java.util.Stack"/>
+    <fullyQualifiedTypeName name="java.util.Queue"/>
+    <fullyQualifiedTypeName name="java.util.Deque"/>
+    <fullyQualifiedTypeName name="java.util.ArrayDeque"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="java.lang.Thread"/>
+    <fullyQualifiedTypeName name="java.lang.Thread.State"/>
+    <fullyQualifiedTypeName name="java.util.LinkedList"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="com.kh.practice.score.controller.ScoreController"/>
+    <fullyQualifiedTypeName name="com.kh.practice.score.view.ScoreMenu"/>
+    <fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
+    <fullyQualifiedTypeName name="java.io.DataInputStream"/>
+    <fullyQualifiedTypeName name="com.kh.practice.score.model.dao.ScoreDAO"/>
 </qualifiedTypeNameHistroy>
