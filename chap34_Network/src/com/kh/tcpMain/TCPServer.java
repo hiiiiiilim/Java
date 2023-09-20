@@ -16,7 +16,6 @@ public class TCPServer {
 				Socket client = serverSocket.accept();
 				System.out.println("클라이언트와 연결 되었습니다.");
 				
-				//
 				client.close();
 			}
 		} catch (IOException e) {
