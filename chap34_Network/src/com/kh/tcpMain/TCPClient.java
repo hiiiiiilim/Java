@@ -15,7 +15,7 @@ public class TCPClient {
 	public static void main(String[] args) throws Exception {
 		//서버주소와 포트번호로 소켓 생성
 		//서버번호와 포트번호는 내가 연결하고자하고자 하는 포토와 동일해야함
-		Socket socket = new Socket("localhost", 1234);
+		Socket socket = new Socket("localhost", 1311);
 		System.out.println("[ Server Connect ]");
 		
 		//보낼때 코드
